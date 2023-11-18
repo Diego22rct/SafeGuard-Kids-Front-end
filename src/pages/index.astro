@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+	page: string;
+}
+
+const { page } = Astro.props;
+console.log(page);
+---
+
+<Layout title="SafeGuard Kids">
+	<main>
+		<h1>
+			SafeGuard Kids
+		</h1>
+	</main>
+</Layout>
+
+<style>
+</style>
