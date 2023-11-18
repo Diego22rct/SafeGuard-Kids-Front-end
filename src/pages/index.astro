@@ -1,32 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Switch from '../components/Switch/Switch';
 ---
 
 <Layout title="SafeGuard Kids">
-	<div class="grid grid-cols-2">
-		<div class="col-span-1">
-			<h2>
-				Centro de acción
-			</h2>
-			<div class="">
-				<ul>
-					<li>
-						<label class="switch">
-							<input type="file">
-						</label>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+		<div class="md:col-span-1 lg:col-span-2 xl:col-span-1">
+			<h2 class="font-bold">Centro de acción</h2>
+			<div class="py-5">
+				<ul class="space-y-4">
+					<li class="flex items-center space-x-4">
+						Servicio de vigilancia IA
+						<Switch />
+					</li>
+					<li class="flex items-center space-x-4">
+						Servicio de vigilancia 2
+						<Switch />
+					</li>
+					<li class="flex items-center space-x-4">
+						Servicio de vigilancia 3
+						<Switch />
+					</li>
+					<li class="flex items-center space-x-4">
+						Servicio de vigilancia 4
+						<Switch />
 					</li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="col-span-1">
-			<h2>
-				¿Qué es SafeGuard Kids?
-			</h2>
-			<div class="">
-
+		<div class="md:col-span-2 lg:col-span-2 xl:col-span-3">
+			<h2>¿Qué es SafeGuard Kids?</h2>
+			<div class="w-full md:w-96">
+				<p>
+					SafeGuard Kids es una startup enfocada en ofrecer un Sistema de Control Parental Inteligente reforzado con sensores inteligentes. Estos sensores, colocados estratégicamente en entradas y zonas clave de la casa, notificarán a los padres cada vez que sus hijos entren o salgan, ofreciendo una capa adicional de seguridad y supervisión. Nuestro objetivo es brindar a los padres una solución completa para supervisar y estar al tanto de las actividades de sus hijos, especialmente cuando están solos en casa.
+				</p>
 			</div>
 		</div>
+		
 	</div>
 </Layout>
 
