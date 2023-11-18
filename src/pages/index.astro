@@ -1,20 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-interface Props {
-	page: string;
-}
-
-const { page } = Astro.props;
-console.log(page);
 ---
 
 <Layout title="SafeGuard Kids">
-	<main>
-		<h1>
-			SafeGuard Kids
-		</h1>
-	</main>
+	<div class="grid grid-cols-2">
+		<div class="col-span-1">
+			<h2>
+				Centro de acción
+			</h2>
+			<div class="">
+				<ul>
+					<li>
+						<label class="switch">
+							<input type="file">
+						</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-span-1">
+			<h2>
+				¿Qué es SafeGuard Kids?
+			</h2>
+			<div class="">
+
+			</div>
+		</div>
+	</div>
 </Layout>
 
 <style>
