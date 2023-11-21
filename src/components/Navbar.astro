@@ -5,8 +5,9 @@ import { Image } from 'astro:assets';
 <div class="bg-white text-black shadow w-full p-2 flex items-center justify-between">
     <div class="flex items-center">
         <div class="flex items-center"> <!-- Mostrado en todos los dispositivos -->
-            <Image width={20} height={20} src="/images/logo.jpeg" alt="Logo" class="w-14 h-18 mr-2">
-            <h2 class="font-bold text-xl">Safe Guard Kids - Dashboard</h2>
+            <Image width={20} height={20} src="/images/logo.jpeg" alt="Logo" class="w-14 h-18 mr-2" />
+            
+                <h2 class="font-bold text-xl">Safe Guard Kids - Dashboard</h2>
         </div>
         <div class="md:hidden flex items-center"> <!-- Se muestra solo en dispositivos pequeños -->
             <button id="menuBtn md:hidden">
