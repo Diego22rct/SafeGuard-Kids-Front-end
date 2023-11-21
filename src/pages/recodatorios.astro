@@ -1,15 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TodoApp from '../components/TodoApp';
 
 interface Props {
 	page: string;
 }
+
 ---
 
 <Layout title="SafeGuard Kids - Recodatorios">
 	<main>
-		<h1>
-            Recodatorios
-		</h1>
+		<TodoApp />
 	</main>
 </Layout>
+
+

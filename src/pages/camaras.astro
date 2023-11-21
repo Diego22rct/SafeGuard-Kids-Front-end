@@ -1,15 +1,82 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import Switch from '../components/Switch/Switch';
 interface Props {
 	page: string;
 }
 ---
 
 <Layout title="SafeGuard Kids - Camaras">
-	<main>
-		<h1>
-            Camaras
-		</h1>
-	</main>
+	<div class="overflow-y-auto">
+		<h1 class="text-4xl font-bold text-center mb-8">Cámaras</h1>
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+		  <!-- Cámaras -->
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 1</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+	  
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 2</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 3</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+
+
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 4</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+
+
+
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 5</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<img src="/images/camara.png" alt="Cámara" class="w-full h-40 object-cover rounded-md mb-4" />
+			<div class="text-center">
+			  <h3 class="text-lg font-bold">Cámara 6</h3>
+			  <!-- Otros detalles de la cámara si es necesario -->
+			</div>
+		  </div>
+
+		  <!-- Repite este bloque para cada cámara -->
+	  
+		  <!-- Centro de vigilancia -->
+		  <div class="w-full bg-white p-4 rounded-lg shadow-md">
+			<h2 class="text-lg font-bold mb-4">Centro de vigilancia</h2>
+			<div class="py-5">
+			  <ul class="space-y-4">
+				<li class="flex items-center space-x-4">
+				  Servicio de vigilancia IA
+				  <Switch />
+				</li>
+				<!-- Otros elementos del centro de vigilancia si es necesario -->
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>	  
 </Layout>
