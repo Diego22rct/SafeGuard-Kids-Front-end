@@ -1,17 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TodoApp from '../components/TodoApp';
+import ReminderWrapper from '../components/Reminder/ReminderWrapper.jsx';
 
 interface Props {
 	page: string;
 }
-
 ---
 
 <Layout title="SafeGuard Kids - Recodatorios">
-	<main>
-		<TodoApp />
-	</main>
+	<ReminderWrapper client:load />
 </Layout>
-
-
