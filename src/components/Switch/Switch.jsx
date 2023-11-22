@@ -1,22 +1,10 @@
-import React from 'react';
-import './Switch.css';
+import * as React from 'react';
+import Switch from '@mui/material/Switch';
 
-const Switch = () => {
-    return (
-        <>
-        <input
-            className="react-switch-checkbox"
-            id={`react-switch-new`}
-            type="checkbox"
-        />
-        <label
-            className="react-switch-label"
-            htmlFor={`react-switch-new`}
-        >
-        <span className={`react-switch-button`} />
-        </label>
-        </>
-    );
-};
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-export default Switch;
+export default function BasicSwitches() {
+  return (
+      <Switch {...label} />
+  );
+}

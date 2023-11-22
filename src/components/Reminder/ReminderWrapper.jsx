@@ -26,16 +26,16 @@ export default function ReminderWrapper() {
     setReminder(reminders.map((reminder) => reminder.id === id ? { ...reminder, isEditing: !reminder.isEditing } : reminder))
   }
 
-  const editThisReminder = (rem, id) => {
+  const editThisReminder = (rem, id, date) => {
     setReminder(
       reminders.map((reminder) =>
-        reminder.id === id ? { ...reminder, reminder: rem, isEditing: !reminder.isEditing } : reminder
+        reminder.id === id ? { ...reminder, reminder: rem, dueDate: date, isEditing: !reminder.isEditing } : reminder
       )
     )
   }
 
   return (
-    <div className=" inline-block">
+    <div className="container">
         <h1>Recordatorios</h1>
         <ReminderForm addReminder={addReminder} />
         {reminders.map((reminder, index) => (

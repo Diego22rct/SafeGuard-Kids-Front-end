@@ -18,11 +18,11 @@ export default function ReminderForm({addReminder}) {
         setDate(currentDate)
     }
     return (
-        <form onSubmit={handleSubmit} >
-            <input onChange={(e) => setReminder(e.target.value)} type="text" 
+        <form className='bg-cyan-100 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full' onSubmit={handleSubmit} >
+            <input className='p-2 px-3 w-1/4 border-2' onChange={(e) => setReminder(e.target.value)} type="text" 
             value={reminder} placeholder="¿Cúal es el recodatorio hoy?"/>
-            <input value={date} type="date" onChange={(e) => setDate(e.target.value)} />
-            <button type="submit">Agregar recodatorio</button>
+            <input className='w-auto p-2 px-3' value={date} type="date" onChange={(e) => setDate(e.target.value)} />
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type="submit">Agregar recodatorio</button>
         </form>
     )
 }
