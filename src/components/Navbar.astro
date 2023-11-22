@@ -4,20 +4,20 @@ import { Image } from 'astro:assets';
 
 <div class="bg-white text-black shadow w-full p-2 flex items-center justify-between">
     <div class="flex items-center">
-        <div class="flex items-center"> <!-- Mostrado en todos los dispositivos -->
+        <div class="flex items-center space-x-2 px-5"> <!-- Mostrado en todos los dispositivos -->
             <Image width={20} height={20} src="/images/logo.jpeg" alt="Logo" class="w-14 h-18 mr-2" />
             
                 <h2 class="font-bold text-xl">Safe Guard Kids - Dashboard</h2>
         </div>
         <div class="md:hidden flex items-center"> <!-- Se muestra solo en dispositivos pequeños -->
-            <button id="menuBtn md:hidden">
+            <button onclick="document.getElementById('sideNav').classList.toggle('hidden');" class="text-gray-500" id="menuBtn md:hidden">
                 <i class="fas fa-bars text-gray-500 text-lg"></i> <!-- Ícono de menú -->
             </button>
         </div>
     </div>
 
     <!-- Ícono de Notificación y Perfil -->
-    <div class="space-x-5">
+    <div class="space-x-2">
         <button>
             <i class="fas fa-bell text-gray-500 text-lg"></i>
         </button>
