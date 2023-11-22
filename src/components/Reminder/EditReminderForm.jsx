@@ -9,7 +9,7 @@ export default function EditReminderForm({editThisReminder, thisReminder}) {
     const [date, setDate] = useState(thisReminder.dueDate)
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(reminder, thisReminder.id, date)
+        
         editThisReminder(reminder, thisReminder.id, date)
     }
     return (

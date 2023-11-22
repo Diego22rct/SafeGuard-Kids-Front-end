@@ -9,7 +9,6 @@ export default function ReminderWrapper() {
   const [reminders, setReminder] = useState([])
 
   const addReminder = (reminder, date) => {
-    console.log(reminder, date) 
     setReminder([...reminders, { id: uuidv4(), reminder, completed: false, isEditing: false, dueDate: date }])
   }
 
@@ -38,7 +37,7 @@ export default function ReminderWrapper() {
     <div className="container">
         <h1>Recordatorios</h1>
         <ReminderForm addReminder={addReminder} />
-        {reminders.map((reminder, index) => (
+        {reminders.map((reminder) => (
           reminder.isEditing ? (
             <EditReminderForm editThisReminder={editThisReminder} thisReminder={reminder} />
           ) : (
